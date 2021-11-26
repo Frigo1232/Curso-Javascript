@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora do dia</title>
+    <link rel="stylesheet" href="idade.css">
+</head>
+<body>
+    <h1>Verificação da idade</h1>
+    <main>
+        <div>
+            <p>Ano de nascimento: <input type="number" name="ano" id="ano" min="0"></p> 
+        </div>
+        <div>
+            <p>
+                Sexo:<input type="radio" name="radsex" id="sexm">
+                    <label for="sexm">Masculino</label>
+                    <input type="radio" name="radsex" id="sexf">
+                    <label for="sexf">Feminino</label>
+            </p>
+            <p>
+                <input type="button" value="Verificação" onclick="clicar()">
+            </p>
+        </div>
+        
+        <div id= res>
+            Preencha os dados para ver o resultado
+        </div>
+        <div id=fot>
+            
+        </div>
+    </main>
+    
+    <footer>
+        Feito por Frg
+    </footer>
+    <script src="Idade.js"></script>
+</body>
+</html>

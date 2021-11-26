@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        body{
+            background-color: rgb(162, 162, 255);
+        }
+        h1{
+            color: white;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-top: 150px;
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: rgb(0, 0, 0);
+            font-size: 5em;
+            
+        }
+        div#area {
+            background:#ffb71b;
+            color:white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align:center;
+            font:normal 20pt Arial;
+            border-radius: 10px;
+            margin: auto;
+            margin-top: 100px;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.466);
+        }
+        p#txt {
+            padding-top: 80px;
+            
+
+        }
+    </style>
+</head>
+<body>
+    <h1>BUTÃO</h1>
+    <div id="area" >
+        <p id=txt>Interaja...</p>
+    </div>
+    <script>
+        var a = window.document.getElementById("area")
+        var b = window.document.getElementById("txt")
+
+        a.addEventListener('click', clicar) 
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseleave', saiu)
+
+            function clicar(){
+                
+                b.innerText = "Clicou!"
+                a.style.background="red"
+                b.style.color = "white"
+            }
+            function entrar(){
+                a.style.background="blue"
+                b.innerText = "Entrou"
+                b.style.color = "white"
+
+            }
+            function saiu(){
+                a.style.background= "#ffb71b"
+                b.innerHTML = "<stong>SAIU</strong>"
+                b.style.color = "black"
+            }
+            
+    </script>
+    
+</body>
+</html>

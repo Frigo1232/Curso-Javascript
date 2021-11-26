@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM, começo</title>
+    <style>
+        body{
+            background: rgb(136, 136, 167);
+            color: white;
+            font: normal 16pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Primeiros passos com dom</h1>
+    <p> resultado ta ai <strong>Bobão</strong></p>
+    <p> hsauhsaushuashu</p>
+    <div class="msg"> clique em mim </div>
+    
+    <script>
+        var corpo = window.document.body
+        var p1 = document.getElementsByTagName("p")[0]
+        p1.style.color = "red"
+        corpo.style.color="black"
+
+       var d =window.document.getElementById("msg")
+        d.style.background ="green"
+        d.innerText = "estou esperando"
+        
+        var d = window.document.querySelector("div.msg")
+        d.style.background="blue"
+    </script>
+</body>
+</html>

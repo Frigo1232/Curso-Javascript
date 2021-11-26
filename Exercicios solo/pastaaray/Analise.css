@@ -1,0 +1,30 @@
+body{
+    background-color: rgb(129, 129, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: white;
+    text-align: center;
+
+}
+main{
+    background-color: white;
+    margin: auto;
+    width: 670px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.596);
+}
+select{
+    width: 200px;
+}
+nav{
+    padding-top: 10px;
+    padding-left: 5px;
+    line-height: 25px
+}
+footer{ 
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
